@@ -10,7 +10,7 @@ Doesn't provide any IoT features at the moment. But who needs IoT features of a 
 
 Hardware
 --------
-You can open the lamp by unscrewing the three screws at the bottom of the lamp (under the rubber feets). Then unscrew the main pcb. It should look like this:
+You can open the lamp by unscrewing the [three screws](img/screws.jpg) at the bottom of the lamp (under the rubber feets). Then you can see [this](img/bottom.jpg). The main pcb should look like this:
 
 <img src="img/pcb-labeled.jpg" width="400">
 
