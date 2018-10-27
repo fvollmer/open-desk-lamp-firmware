@@ -1,7 +1,7 @@
 xiomi-desk-lamp-open-firmware
 =============================
 
-The xiaomi desk lamp is a modern IoT device, that uses the ESP8266 microcontroller. This project provides an open source firmware replacement this lamp. It provides basic functionality:
+The Xiaomi desk lamp is a modern IoT device, that uses the ESP8266 microcontroller. This project provides an open source firmware replacement this lamp. It provides basic functionality:
  * Toggle on/off (press and release button)
  * Dimming (rotate button while on)
  * Change color temperature (press and rotate button while on)
@@ -12,7 +12,7 @@ Hardware
 --------
 You can open the lamp by unscrewing the [three screws](img/screws.jpg) at the bottom of the lamp (under the rubber feets). Then you can see [this](img/bottom.jpg). The main pcb should look like this:
 
-<img src="img/pcb-labeled.jpg" width="400">
+<img src="img/pcb-labeled.jpg" width="500">
 
 The Hardware basically consists of an ESP8266 Module, some regulators and a rotary encoder. The ESP8266 controls two switching regulators via PWM to set the brightness of the cold and warm LEDs. For some reason the `esptool.py` detects the ESP8266 as ESP8285, even trough there is an external flash chip.
 
