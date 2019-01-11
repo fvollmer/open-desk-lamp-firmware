@@ -1,0 +1,58 @@
+dist: xenial
+language: c
+sudo: false
+
+addons:
+  apt:
+    packages:
+      - make
+      - unrar-free
+      - autoconf
+      - automake
+      - libtool
+      - libtool-bin
+      - gcc
+      - g++
+      - gperf
+      - flex
+      - bison
+      - texinfo
+      - gawk
+      - ncurses-dev
+      - libexpat-dev
+      - python-dev
+      - python
+      - python-serial
+      - sed
+      - git
+      - unzip
+      - bash
+      - help2man
+      - wget
+      - bzip2
+      - cmake
+
+install:
+  - cd $HOME
+  - unset CC
+  - git clone --recursive https://github.com/pfalcon/esp-open-sdk.git
+  - cd esp-open-sdk/
+  - make
+  - export PATH=$PATH:$(pwd)/xtensa-lx106-elf/bin/
+
+script:
+  - cd $TRAVIS_BUILD_DIR
+  - mkdir bin
+  - cd bin
+  - cmake ../src/
+  - make
+  - ls
+  - zip xiaomi_desk_lamp.zip xiaomi_desk_lamp*.bin xiaomi_desk_lamp
+
+deploy:
+  provider: releases
+  api_key: $GITHUB_API_KEY
+  file: xiaomi_desk_lamp.zip
+  skip_cleanup: true
+  draft: true
+
