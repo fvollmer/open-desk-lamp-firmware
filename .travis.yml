@@ -54,5 +54,6 @@ deploy:
   api_key: $GITHUB_API_KEY
   file: xiaomi_desk_lamp.zip
   skip_cleanup: true
-  draft: true
+  on:
+    tags: true
 
