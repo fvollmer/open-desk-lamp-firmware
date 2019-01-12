@@ -39,6 +39,7 @@ Install [esp-open-sdk](https://github.com/pfalcon/esp-open-sdk), setup PATH envi
 Build the firmware:
 	
 	mkdir bin
+	cd bin
 	cmake ../src/
 	make
 
