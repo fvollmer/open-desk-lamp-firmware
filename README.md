@@ -1,5 +1,7 @@
-xiomi-desk-lamp-open-firmware
-=============================
+open-desk-lamp-firmware
+=======================
+
+<img src="img/lamp.jpg" width="300">
 
 The Xiaomi desk lamp is a modern IoT device, that uses the ESP8266 microcontroller. This project provides an open source firmware replacement this lamp. It provides basic functionality:
  * Toggle on/off (press and release button)
